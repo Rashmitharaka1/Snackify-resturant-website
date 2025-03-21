@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snackify-Catering</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+ 
+  
+</head>
+<body>
+    <header>
+
+    <nav>
+        
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html"target="_blank">home</a></li>
+            <li><a href="index2.html" target="_blank">menu</a></li>
+            <li><a href="index3.html" target="_blank">catering</a></li>
+            <li><a href="index4.html"target="_blank">delivery areas</a></li>
+            <li><a href="index5.html" target="_blank">about us</a></li>
+            <li><a href="index6.html" target="_blank">contact us</a></li>
+        </ul>
+       
+        <ul>
+            
+            <li class="logo"><img src="img/features-icon-3.2.png" alt="">Snackify</li>
+            <li class="hideOnMobile"><a href="index.html" target="_blank">home</a></li>
+            <li class="hideOnMobile"><a href="index2.html" target="_blank">menu</a></li>
+            <li class="hideOnMobile"><a href="index3.html" target="_blank">catering</a></li>
+            <li class="hideOnMobile"><a href="index4.html" target="_blank">delivery areas</a></li>
+            <li class="hideOnMobile"><a href="index5.html" target="_blank">about us</a></li>
+            <li class="hideOnMobile"><a href="index6.html" target="_blank">contact us</a></li>
+            <li class="menu-button"   onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        
+         <!--icons-->
+         <div class="header-icon">
+        <i class='bx bx-cart-alt'></i>
+        <i class='bx bx-search-alt-2' id="search-icon"></i>
+        </div>
+
+        <!--search box-->
+        <div class="search-box">
+        <input type="search" placeholder="search here.........">
+        </div>
+        </ul>
+    </nav>
+    </header>
+
+    <section class="catering" id="catering">
+        
+        <div class="catering-text">
+            <h1 class="topic">Catering</h1>
+            
+            <h5>We are pleased to extend our catering services for any event within Colombo. May it be a birthday party, cocktail, product launch or a wedding, our dynamic team is ready to serve you.</h5><br>
+            <h2>We Provide</h2><br>
+            <ol>
+            <li>A menu specially designed for your event</li>
+            <li>A friendly and dynamic team for service during the event</li>
+            <li>Table arrangement necessities such as tables, plates, glasses, cutlery, shafing dishes, etc.</li>
+            <li>Setting up and preparation prior to the event</li>
+            </ol>
+            
+        </div>
+        <div class="catering-img">
+            <img src="img/collage.jpg" alt="">
+        </div>
+    </section>
+    <section class="quote" id="quote">
+    <div class="quote-text">
+        <h1><b>Request for a Quote</b></h1><br>
+        <h5><i>Tell us a little about your event, and we will contact you with a menu and pricing information.</i></h5><br><br>
+    </div>
+    <div class="request-form">
+        <form action="#">
+            <label>First Name:</label>
+            <input type="text"name="first_name"id="answer"><br><br>
+            <label>Last Name:</label>
+            <input type="text" name="last_name"id="answer"/><br><br>
+            <label>Email Address:</label>
+            <input type="email"name="email"id="answer"/><br><br>
+            <label>Contact Number:</label>
+            <input type="number"name="number"id="answer"><br><br>
+            <label>Type of event:</label>
+            <select name="select the type of event"id="answer">
+                <option value="select the type of event">select the type of event...</option>
+                <option value="wedding">wedding</option>
+                <option value="Birthday">Birthday</option>
+                <option value="co-event">Corporate event</option>
+                <option value="product-launch">Product Launch</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label>Cuisine</label>
+            <select name="cuisine"id="answer">
+                <option value="select the type of cuisine">Select the type of cuisine...</option>
+                <option value="short_eats">Short eats/FingerFood</option>
+                <option value="western">Western</option>
+                <option value="italian">Italian</option>
+                <option value="indian">Indian</option>
+                <option value="chinese">Chinese</option>
+                <option value="mixed">Mixed Variety</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label>Event Date</label>
+            <input type="date"name="date"id="answer"><br><br>
+            <label>Time</label>
+            <select name="time"id="answer">
+                <option value="select">Select time...</option>
+                <option value="morning">Morning</option>
+                <option value="noon">Noon</option>
+                <option value="evening">Evening</option>
+                <option value="full_day">Full Day</option>
+            </select><br><br>
+            <label>Expected No. of Guests</label>
+            <select name="guest"id="answer">
+                <option value="guest">Select approximate range...</option>
+                <option value="#">20-50 guests</option>
+                <option value="#">50-100 guests</option>
+                <option value="#">100-150 guests</option>
+                <option value="#">150-200 guests</option>
+                <option value="#">200-250 guests</option>
+                <option value="#">250-300 guests</option>
+                <option value="#">300-400 guests</option>
+                <option value="#">400-500 guests</option>
+                <option value="#">More than 500 guests</option>
+            </select><br><br>
+            <label>Venue</label>
+            <textarea name="venue" rows="3"id="answer_2"></textarea><br><br>
+            <input type="submit"name="submit" class="submit"/>
+        </form>
+    </div>
+    </section>
+
+    <footer>
+        <div class="container_f">
+            <div class="sec_aboutus">
+                <h2>About Us</h2>
+                <p>At Snackify restaurant, we love good food and great times. Our chefs use fresh, local ingredients to create delicious dishes. We're all about sharing tasty moments and creating a cozy place for you to enjoy. Come join us in savoring the simple joy of good eats and good company.</p>
+                <ul class="sci">
+                    <li><a href="#"><i class='bx bxl-facebook-square'></i></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-whatsapp-square'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+                </ul>
+            </div>
+            <div class="sec_quicklinks"><h2>Support</h2>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="index6.html">Contact</a></li>
+            </ul>
+            </div>
+            <div class="sec_quicklinks"><h2>Shop</h2>
+                <ul>
+                    <li><a href="index2.html">Cakes & Sweet Treats</a></li>
+                    <li><a href="index2.html">Savories</a></li>
+                    <li><a href="index2.html">Lunch</a></li>
+                </ul>
+            </div>
+            <div class="sec_contact">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class='bx bxs-map'></i></span>
+                        <p><a href="">347, Galle Road, Colombo Sri Lanka</a></p>
+                    </li>
+                    <li>
+                        <span><i class='bx bxs-phone-call'></i></span>
+                        <p><a href="tel:+94769787029">(+94) 917910072</a></p>
+                    </li>
+                    <li>
+                        <span><i class='bx bxl-gmail'></i></span>
+                        <p><a href="mailto:snackify@gmail.com">snackify@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+        <div class="copyrightText">
+            <p>© 2024 Snackify Restaurant (Pvt.) Ltd. 347, Galle Road, Colombo 03, Sri Lanka. Tel: (+94) 917910072 , (+94) 769787029</p>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
